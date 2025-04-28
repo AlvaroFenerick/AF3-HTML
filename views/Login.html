@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Manuais Scania</title>
+</head>
+<body>
+    <form>
+        <h1>Login</h1>
+        <input type="email" id="email" name="email" onchange="ValidateFields()" placeholder="Email">
+        <input type="password" id="password" name="senha" onchange="ValidateFields()" placeholder="Senha">
+        <button type="button" class="solid" id="login-button" disabled="true">Entrar</button>
+        <button type="button"  class="clear" id="recover-password-button" disabled="true">Recuperar Senha</button>
+        <button type="button" class="outline">Registro</button>
+    </form>
+</body>
+<link rel="stylesheet" href="Login.css"/> 
+<script src="Login.js"></script>
+</html>

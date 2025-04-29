@@ -1,11 +1,12 @@
 body {  
-    background: rgb(173, 216, 230);
+    background: rgb(102, 207, 255);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-} 
+}
+
 form {
     width: 300px;
     background: rgba(255, 255, 255, 0.2);
@@ -13,6 +14,7 @@ form {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 input, button {
     padding: 10px;
     margin-bottom: 10px;
@@ -21,36 +23,38 @@ input, button {
     border: none;
     box-sizing: border-box;
 }
+
 button {
     cursor: pointer;
 }
+
 button:active {
     opacity: 0.8;
 }
-button[disabled]  {
+
+button[disabled] {
     opacity: 0.7;
 }
-.clear {
+
+.solid, .clear, .outline {
     background: transparent;
     color: white;
     border: 1px solid white;
     text-shadow: 1px 1px 2px black;
 }
-.solid {
-    background: transparent;
-    color: white;
-    border: 1px solid white;
-    text-shadow: 1px 1px 2px black;
-}
-.outline {
-    background: transparent;
-    color: white;
-    border: 1px solid white;
-    text-shadow: 1px 1px 2px black;
-}
+
 h1 {
     text-align: center;
     margin-bottom: 20px;
     color: white; 
     text-shadow: 1px 1px 2px black;
+}
+
+.error {
+    color: white;
+    background: red;
+    display: none;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
 }

@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Manuais Scania</title>
+    <link rel="stylesheet" href="Login.css"/>
 </head>
 <body>
     <form>
         <h1>Login</h1>
-        <input type="email" id="email" name="email" onchange="ValidateFields()" placeholder="Email">
-        <input type="password" id="password" name="senha" onchange="ValidateFields()" placeholder="Senha">
-        <button type="button" class="solid" id="login-button" disabled="true">Entrar</button>
-        <button type="button"  class="clear" id="recover-password-button" disabled="true">Recuperar Senha</button>
+        <input type="email" id="email" name="email" onchange="onChangeEmail()" placeholder="Email">
+        <div class="error" id="email-required-error">Email é obrigatório</div>
+        <div class="error" id="email-invalid-error">Email é inválido</div>
+
+        <input type="password" id="password" name="senha" onchange="onChangePassword()" placeholder="Senha">
+        <div class="error" id="password-required-error">Senha é obrigatória</div>
+
+        <button type="button" class="solid" id="login-button" disabled>Entrar</button>
+        <button type="button" class="clear" id="recover-password-button" disabled>Recuperar Senha</button>
         <button type="button" class="outline">Registro</button>
     </form>
+
+    <script src="Login.js"></script>
+    <script src="validations.js"></script>
 </body>
-<link rel="stylesheet" href="Login.css"/> 
-<script src="Login.js"></script>
 </html>
